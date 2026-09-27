@@ -1,0 +1,43 @@
+/* Paleta EMI Shop: crema, caramelo y amarillo dorado del logotipo. */
+:root {
+  --emi-cream: #f5e5d2;
+  --emi-paper: #fffcf7;
+  --emi-caramel: #b3936e;
+  --emi-gold: #f7c451;
+  --emi-ink: #59432f;
+  --emi-muted: #876e52;
+  --emi-border: #e9d8c1;
+  background: #f8ebdc;
+  color: var(--emi-ink);
+}
+.sidebar, .topbar { background: var(--emi-paper); border-color: var(--emi-border); }
+.brand { color: #a17d54; }
+.brand-light { color: #9b6913; font-style: italic; }
+.brand-icon { background: var(--emi-caramel); color: var(--emi-paper); }
+.nav.active { background: #f7e8cb; color: #79552b; }
+.active-dot, .local-dot, .profile-dot { background: #bf8c35; }
+.primary { background: var(--emi-gold); border-color: #eab53f; color: #513a1e; font-weight: 650; }
+.primary:hover { background: #f3ba36; }
+.stat-primary { background: var(--emi-caramel); border-color: var(--emi-caramel); color: #38291c; }
+.stat-primary .stat-title, .stat-primary small { color: #423020; }
+.stat-primary .stat-title > span { background: #f5e5d24d; color: #513a24; }
+.stat-primary::after { border-color: #f5e5d24d; }
+.stat, .panel { border-color: var(--emi-border); }
+.profit { color: #805c30; }
+.profit > svg { background: #fff0c7; color: #a47422; border-radius: 8px; padding: 4px; width: 32px; height: 32px; }
+.bar { background: #e8cc9f; }
+.bar.current { background: var(--emi-gold); }
+.chip span, .progress span { background: #d6a044; }
+.inventory-note { background: #f4e4cc; border-color: #e8d3b6; }
+.selected-product, .product-icon, .empty-icon { background: #f7eddf; color: #a17d54; }
+.badge { background: #f1e5d2; color: #785634; }
+.badge.low { background: #fff0c5; color: #866018; }
+.sell-button { background: #fff0c7; border-color: #ead39c; color: #755120; }
+.toast { background: #745335; color: #fff9ee; }
+dialog::backdrop { background: #49352266; }
+form input:focus, form select:focus { border-color: #b3936e; box-shadow: 0 0 0 3px #f5e5d2; }
+button:focus-visible, a:focus-visible { outline-color: #bd8932; }
+@media (max-width: 620px) {
+  .inventory-table tr { border-color: var(--emi-border); }
+  .inventory-table .row-actions .icon-button { background: #f5e5d2; color: #805c30; }
+}
