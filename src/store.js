@@ -1,6 +1,6 @@
 export const KEY = 'emi-shop-v1';
-export const types = ['Franela', 'Blusa', 'Suéter', 'Pantalón', 'Traje de baño', 'Ropa íntima', 'Otro'];
-export const expenseCategories = ['Conserje', 'Pasajes', 'Comida', 'Pago de trabajadoras', 'Servicios', 'Alquiler', 'Otros'];
+export const types = ['Franela', 'Blusa', 'Suéter', 'Pantalón', 'Traje de baño', 'Ropa íntima', 'Sandalias', 'Zapatos', 'Carteras', 'Bandoleros', 'Accesorios', 'Splash', 'Lentes', 'Correas', 'Otro'];
+export const expenseCategories = ['Conserje', 'Pasajes', 'Comida', 'Pago de trabajadoras', 'Servicios', 'Alquiler', 'Bolsas', 'Otros'];
 export const emptyStore = () => ({ version: 1, products: [], sales: [], expenses: [], currency: 'USD' });
 export function localDate(date = new Date()) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
